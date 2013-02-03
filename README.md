@@ -8,11 +8,12 @@ This enables using CakeEmail from CakePHP 2.0 with Mandrill.
 
 		public $mandrill = array(
 			'transport' => 'Mandrill',
+			'emailFormat' => 'html',
 			'uri' => 'https://mandrillapp.com/api/1.0/',
 			'key' => 'your-key-here'
 		);
 
-	Be sure to update the API Key to your own key.
+	Be sure to update the API Key to your own key. Add other CakePHP settings as needed.
 
 2. Copy the `MandrillTransport.php` file to `/app/Lib/Network/Email/MandrillTransport.php`.
 
